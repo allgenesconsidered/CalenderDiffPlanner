@@ -36,13 +36,20 @@ $ pip install --upgrade google-api-python-client
 ## Running the script
 
 To run the script you need to specify:
+
  * The name of the Diff. Surround in qoutes. 
+ 
  * The version of the protocol you're using.
+ 
   - 1.0
   - 1.2
   - 1.4
+  
+  
 You can also add the time and date of the diff. If left blank, the time and date are set to now:
+
   * -d for adding the date in YYYY-MM-DD format.
+  
   * -t for adding the time in HH:MM format for 24-hour or HH:MM:_M for 12-hour format
  
  Here's an example of running the script for a diff called "BAG3 Het KO", with protocol 1.0, at 9:35 AM starting today:
