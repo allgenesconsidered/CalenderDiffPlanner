@@ -52,7 +52,8 @@ You can also add the time and date of the diff. If left blank, the time and date
   
   * -t for adding the time in HH:MM format for 24-hour or HH:MM:_M for 12-hour format
  
- Here's an example of running the script for a diff called "BAG3 Het KO", with protocol 1.0, at 9:35 AM starting today:
+
+Here's an example of running the script for a diff called "BAG3 Het KO", with protocol 1.0, at 9:35 AM starting today:
  ```bash
 $ python diffPlanner.py "BAG3 Het KO" 1.0 -t 9:35 
 Initiating API request
