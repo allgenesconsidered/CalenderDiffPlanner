@@ -20,17 +20,6 @@ APPLICATION_NAME = 'DiffPlanner'
 
 CALENDAR_NAME = 'Diff Planner'
 
-def checkConnection():
-    """ Pings google to see if you are connected to the internet. 
-
-        Returns True if the google.com server responds.
-    """
-    try:
-        response=urllib2.urlopen('http://216.58.192.142', timeout=1) # google.com
-        return True
-    except urllib2.URLError as err: pass
-    return False
-
 
 def get_credentials():
     """Gets valid user credentials from storage.
@@ -100,6 +89,8 @@ def createCalendar(service):
 
 
 def getCalender(service):
+    """ Returns the calenter ID of interested based on the CALENDAR_NAME glob val.
+    """
     calID = checkForCalendar(service, CALENDAR_NAME)
     if not calID:
         calID = createCalendar(service)
@@ -107,6 +98,8 @@ def getCalender(service):
 
 
 def addEvent(service, summary, description, start, end, calID):
+    """ Adds an event. 
+    """
 
     event = {
         'summary': summary,
