@@ -36,7 +36,7 @@ def checkConnection():
         Returns True if the google.com server responds.
     """
     try:
-        response=urllib2.urlopen('http://216.58.192.142', timeout=1) # google.com
+        response=urllib2.urlopen('http://216.58.192.142', timeout=1) # google.com, 1 sec
         return True
     except urllib2.URLError as err:
     	raise Exception("Not connected to the internet dummy!")
