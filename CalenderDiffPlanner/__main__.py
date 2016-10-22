@@ -1,7 +1,7 @@
 #!/usr/bin/env
 from __future__ import print_function
 import httplib2
-import os, argparse, re
+import os, argparse, re, urllib2
 from datetime import date, datetime, time
 
 
@@ -36,7 +36,7 @@ def checkConnection():
         Returns True if the google.com server responds.
     """
     try:
-        response=urllib2.urlopen('http://216.58.192.142', timeout=1) # google.com, 1 sec
+        response=urllib2.urlopen('http://216.58.192.142', timeout=3) # google.com, 3 sec
         return True
     except urllib2.URLError as err:
     	raise Exception("Not connected to the internet dummy!")
@@ -101,13 +101,16 @@ def convertToDateTime(date, time):
 		int(hour), int(minute))
 
 
-
-if __name__ == '__main__':
-
+def main():
 	if checkConnection():
-
 		args = getArgs()
 		t = convertToDateTime(args.date, args.time)
 		generateSchedule.runScheduler(args.name, args.protocol, t)
 
 
+
+
+if __name__ == '__main__':
+	main()
+
+	

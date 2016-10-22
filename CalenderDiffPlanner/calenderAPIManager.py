@@ -15,7 +15,7 @@ import urllib2
 # If modifying these scopes, delete your previously saved credentials
 # at ~/.credentials/calendar-python-quickstart.json
 SCOPES = 'https://www.googleapis.com/auth/calendar'
-CLIENT_SECRET_FILE = 'client_secret.json'
+CLIENT_SECRET_FILE = '../res/client_secret.json'
 APPLICATION_NAME = 'DiffPlanner'
 
 CALENDAR_NAME = 'Diff Planner'
@@ -106,6 +106,9 @@ def addEvent(service, summary, description, start, end, calID):
         'description': description,
         'start': {'dateTime': start},
         'end': {'dateTime': end},
+        'reminders':{
+            'useDefault': True
+        }
     }
 
     event = service.events().insert(calendarId=calID, body=event).execute()
@@ -117,6 +120,14 @@ def main():
     """Shows basic usage of the Google Calendar API.
 
     """
+    try:
+        import argparse
+        flags = argparse.ArgumentParser(parents=[tools.argparser]).parse_args()
+        flags, extras = parser.parse_known_args(None)
+    except ImportError:
+        flags = None
+
+
     if not checkConnection():
         raise Exception("Not connected to the internet dummy!")
 
@@ -133,10 +144,5 @@ def main():
 
 
 if __name__ == '__main__':
-    try:
-        import argparse
-        flags = argparse.ArgumentParser(parents=[tools.argparser]).parse_args()
-        flags, extras = parser.parse_known_args(None)
-    except ImportError:
-        flags = None
+
     main()
