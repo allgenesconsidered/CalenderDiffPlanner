@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(
-	name = 'CalenderDiffPlanner',
+	name = 'diff-planner',
 	version = '0.1.2',
-	packages = ['CalenderDiffPlanner','res'],
+	packages = ['src','res'],
 	entry_points = {
 		'console_scripts': [
-		'CalenderDiffPlanner = CalenderDiffPlanner.__main__:main']
+		'diff-planner = src.__main__:main']
 	})
