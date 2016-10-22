@@ -33,13 +33,25 @@ Type "help", "copyright", "credits" or "license" for more information.
 $ pip install --upgrade google-api-python-client
 ``` 
 
-## Running the script
+## Install
+
+Navigate to the install directory on your terminal : 
+```bash
+$ cd /PATH_TO_CalerderDiffPlanner/
+``` 
+Then install the program using the command :
+```bash
+$ pip install .
+``` 
+
+
+## Running 
 
 To run the script you need to specify:
 
- * The name of the Diff. Surround in qoutes. 
+ * The name of the Diff. Surround in qtes. 
  
- * The version of the protocol you're using.
+ * The version of the protocol you're using.uo
  
   - 1.0
   - 1.2
@@ -55,7 +67,7 @@ You can also add the time and date of the diff. If left blank, the time and date
 
 Here's an example of running the script for a diff called "BAG3 Het KO", with protocol 1.0, at 9:35 AM starting today:
 ```bash
-$ python diffPlanner.py "BAG3 Het KO" 1.0 -t 9:35 
+$ CalenderDiffPlanner "BAG3 Het KO" 1.0 -t 9:35 
 Initiating API request
 Adding events to Diff Planner
 Making the magic happen
@@ -64,11 +76,11 @@ Diff schedule generated sucessfully!
 
 Here's another example of running the script for a diff called "WTC Diff 1", with protocol 1.4, at 2PM on October 1st, 2016:
 ```bash
-$ python diffPlanner.py "WTC Diff 1" 1.4 -d 2016-10-01 -t 02:00:PM 
+$ CalenderDiffPlanner "WTC Diff 1" 1.4 -d 2016-10-01 -t 02:00:PM 
 ``` 
 or 
 ```bash
-$ python diffPlanner.py "WTC Diff 1" 1.4 -d 2016-10-01 -t 14:00 
+$ CalenderDiffPlanner "WTC Diff 1" 1.4 -d 2016-10-01 -t 14:00 
 ``` 
 
 Check your google calender to make sure everything worked well.
