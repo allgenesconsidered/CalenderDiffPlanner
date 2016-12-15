@@ -26,7 +26,7 @@ Type "help", "copyright", "credits" or "license" for more information.
   5. Select the application type **Other**, enter the name "Google Calendar API Quickstart", and click the **Create** button.
   6. Click **OK** to dismiss the resulting dialog.
   7. Click the down arrow to download the JSON file of the client ID.
-  8. Move this file to your working directory (the files you downloaded from here) and rename it *client_secret.json*. 
+  8. Move this file to your working directory (the files you downloaded from here) and rename it *client_secret.json*. Replace the other 'client_secret.json' file in the *res* folder 
   
 3. Run the following command to install the Google Client library using pip:
 ```bash
