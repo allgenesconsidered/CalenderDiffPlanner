@@ -1,0 +1,9 @@
+diff_planner.egg-info/PKG-INFO
+diff_planner.egg-info/SOURCES.txt
+diff_planner.egg-info/dependency_links.txt
+diff_planner.egg-info/entry_points.txt
+diff_planner.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/calenderAPIManager.py
+src/generateSchedule.py

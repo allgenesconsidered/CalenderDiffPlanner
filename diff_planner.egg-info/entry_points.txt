@@ -1,0 +1,3 @@
+[console_scripts]
+diff-planner = src.__main__:main
+

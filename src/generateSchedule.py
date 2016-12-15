@@ -6,32 +6,34 @@ import calenderAPIManager as API
 
 
 PROTOCOL_v1_0 = {
-	0 : "12 uM CHIR in RPMI (-)Insulin",
-	1 : "RPMI (-)Insulin Only",
-	3 : "5 uM IWP2 in RPMI(-)",
-	5 : "RPMI (-)Insulin Only",
-	7 : "RPMI (+)Insulin",
+	0 : "Add 12 uM CHIR in RPMI (-)Insulin",
+	1 : "Add RPMI (-)Insulin Only",
+	3 : "Add 5 uM IWP2 in RPMI(-)",
+	5 : "Add RPMI (-)Insulin Only",
+	7 : "Add RPMI (+)Insulin",
 	14: "Check for beating cells",
 	15: "Replate cells",
-	16: "RPMI (+)Insulin",
+	16: "Add RPMI (+)Insulin",
 	20: "Lactate Treatment #1",
 	22: "Lactate Treatment #2",
-	24: "RPMI (+)Insulin"
+	24: "Replace with RPMI (+)Insulin",
+	30: "Day 30 Harvest!"
 
 }
 
 PROTOCOL_v1_2 = {
-	0 : "12 uM CHIR in RPMI (-)Insulin",
-	1 : "RPMI (-)Insulin Only",
-	3 : "5 uM IWP2 in RPMI(-)",
-	5 : "RPMI (-)Insulin Only. Split cells.",
-	10 : "RPMI (+)Insulin",
+	0 : "Add 12 uM CHIR in RPMI (-)Insulin",
+	1 : "Add RPMI (-)Insulin Only",
+	3 : "Add 5 uM IWP2 in RPMI(-)",
+	5 : "Add RPMI (-)Insulin Only. Split cells.",
+	10 : "Add RPMI (+)Insulin",
 	14: "Check for beating cells",
 	15: "Replate cells",
-	16: "RPMI (+)Insulin",
+	16: "Add RPMI (+)Insulin",
 	20: "Lactate Treatment #1",
 	22: "Lactate Treatment #2",
-	24: "RPMI (+)Insulin"
+	24: "Replace with RPMI (+)Insulin",
+	30: "Day 30 Harvest!"
 
 }
 
@@ -43,10 +45,11 @@ PROTOCOL_v1_4 = {
 	8 : "RPMI (+)Insulin",
 	14: "Check for beating cells",
 	15: "Replate cells",
-	16: "RPMI (+)Insulin",
+	16: "Add RPMI (+)Insulin",
 	20: "Lactate Treatment #1",
 	22: "Lactate Treatment #2",
-	24: "RPMI (+)Insulin"
+	24: "Replace with RPMI (+)Insulin",
+	30: "Day 30 Harvest!"
 
 }
 
